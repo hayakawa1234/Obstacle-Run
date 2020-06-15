@@ -24,12 +24,17 @@ public class PlayerManager : MonoBehaviour
         x = Input.GetAxisRaw("Horizontal");
         z = Input.GetAxisRaw("Vertical");
 
- 
+        //攻撃入力:Mボタンを押したら 
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            Debug.Log("攻撃!!!");
+        }
 
     }
 
     private void FixedUpdate()
-    {
+    {   
+        //方向転換
         Vector3 direction = transform.position + new Vector3(x, 0, z) * moveSpeed;
         transform.LookAt(direction);
         //速度設定
