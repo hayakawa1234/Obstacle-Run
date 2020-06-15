@@ -70,6 +70,14 @@
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\FREE Footsteps System\scripts\CameraFollow.cs" />
+    <Compile Include="Assets\FREE Footsteps System\scripts\CameraView.cs" />
+    <Compile Include="Assets\FREE Footsteps System\scripts\CharacterFootsteps.cs" />
+    <Compile Include="Assets\FREE Footsteps System\scripts\DemoUI.cs" />
+    <Compile Include="Assets\FREE Footsteps System\scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\FREE Footsteps System\scripts\FootstepTrigger.cs" />
+    <Compile Include="Assets\FREE Footsteps System\scripts\SurfaceManager.cs" />
+    <Compile Include="Assets\FREE Footsteps System\scripts\TopDownController.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
