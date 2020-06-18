@@ -28,6 +28,15 @@ public class PlayerManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.M))
         {
             animator.SetTrigger("attack");
+        } else if(Input.GetKeyDown(KeyCode.N))
+        {
+            animator.SetTrigger("attack2");
+        } else if(Input.GetKeyDown(KeyCode.J))
+        {
+            animator.SetTrigger("attack3");
+        } else if(Input.GetKeyDown(KeyCode.Space))
+        {
+            animator.SetTrigger("jump");
         }
 
     }

@@ -98,6 +98,24 @@
     <Compile Include="Assets\Marcos Schultz\MSAdvancedCameraController\Scripts\MobileSystems\MSACCButtons.cs" />
     <Compile Include="Assets\Marcos Schultz\MSAdvancedCameraController\Scripts\MobileSystems\MSACCJoystick.cs" />
     <Compile Include="Assets\Marcos Schultz\MSAdvancedCameraController\Scripts\MobileSystems\MSACCMobileInputs.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\Code\CameraController.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\Code\GUIControlsFREE.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\Code\IKHandsFREE.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\Code\RPGCharacterControllerFREE.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\Code\RPGCharacterInputControllerFREE.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\Code\RPGCharacterMovementControllerFREE.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\Code\RPGCharacterWeaponControllerFREE.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\Scripts\Gravity.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\Scripts\SimpleStateMachine.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\BSPTree.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\BruteForceMesh.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperCharacterController.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperCollider.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperCollisionType.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperMath.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperStateMachine.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\DebugDraw.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Math3d.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -131,6 +149,7 @@
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
     <None Include="Assets\JMO Assets\WarFX\!WarFX Readme.txt" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Alpha-Diffuse TintColor.shader" />
+    <None Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\README.txt" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Users/mu-sh/2019.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
