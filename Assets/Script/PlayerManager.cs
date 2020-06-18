@@ -16,6 +16,8 @@ public class PlayerManager : MonoBehaviour
     {
         //Rigidbodyの値を取得
         rb = GetComponent<Rigidbody>();
+        //旋回などをしないようにする
+        rb.constraints = RigidbodyConstraints.FreezeRotation;
         animator = GetComponent<Animator>();
     }
 
@@ -30,12 +32,18 @@ public class PlayerManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.M))
         {
             animator.SetTrigger("attack");
+
+        //攻撃入力：Nボタンを押したら
         } else if(Input.GetKeyDown(KeyCode.N))
         {
             animator.SetTrigger("attack2");
+
+        //攻撃入力：Jボタンを押したら
         } else if(Input.GetKeyDown(KeyCode.J))
         {
             animator.SetTrigger("attack3");
+
+        //攻撃入力：Spaceボタンを押したら
         } else if(Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetTrigger("jump");
