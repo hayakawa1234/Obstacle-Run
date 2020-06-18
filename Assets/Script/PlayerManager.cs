@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerManager : MonoBehaviour
-{   
+{
     //Rigidbodyの変数rbの宣言
     Rigidbody rb;
     Animator animator;
     float x;
     float z;
     public float moveSpeed = 2;
+
     void Start()
     {
         //Rigidbodyの値を取得
@@ -38,7 +40,6 @@ public class PlayerManager : MonoBehaviour
         {
             animator.SetTrigger("jump");
         }
-
     }
 
     private void FixedUpdate()
