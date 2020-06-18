@@ -27,7 +27,7 @@ public class PlayerManager : MonoBehaviour
         //攻撃入力:Mボタンを押したら 
         if(Input.GetKeyDown(KeyCode.M))
         {
-            Debug.Log("攻撃!!!");
+            animator.SetTrigger("attack");
         }
 
     }
