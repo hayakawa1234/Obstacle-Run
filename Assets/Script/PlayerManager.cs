@@ -59,4 +59,9 @@ public class PlayerManager : MonoBehaviour
         rb.velocity = new Vector3(x, 0, z) * moveSpeed;
         animator.SetFloat("speed", rb.velocity.magnitude);
     }
+
+    public void Hit()
+    {
+        
+    }
 }
