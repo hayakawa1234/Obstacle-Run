@@ -8,12 +8,13 @@ public class Goal : MonoBehaviour
     void Start()
     {
         goal = false;
+        gameObject.tag = "Player";
     }
 
     // Update is called once per frame
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "Player")
+        if (gameObject.tag == "Player")
         {
             goal = true;
         }
