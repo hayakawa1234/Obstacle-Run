@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class MoveBox : MonoBehaviour
 {
-    void FixedUpdate()
+    public void OnTriggerEnter(Collider other)
     {
-        Rigidbody rb = this.GetComponent<Rigidbody>();
-        Vector3 force = new Vector3(0.1f, 0.1f, 0.1f);
-        rb.AddForce(force);
+        Debug.Log("ぶつかったよ");
     }
 }

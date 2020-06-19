@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class PlayerManager : MonoBehaviour
 {
     //Rigidbodyの変数rbの宣言
+    AnimatorStateInfo animatorStateInfo;
     Rigidbody rb;
     Animator animator;
     float x;
@@ -64,4 +65,19 @@ public class PlayerManager : MonoBehaviour
     {
         
     }
-}
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "cube(3)")
+        {
+            if (animatorStateInfo.IsName("attack3"))
+            {
+                rb.AddForce(transform.root.forward * 25, ForceMode.Impulse);
+            }
+
+        }
+
+        }
+    }
+
+
