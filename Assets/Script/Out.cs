@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Out : MonoBehaviour
 {
-    // Start is called before the first frame update
+    void Start()
+    {
+        gameObject.tag = "Player";
+    }
     private void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Player")
+        if (gameObject.tag == "Player")
         {
             SceneManager.LoadScene(
                 SceneManager.GetActiveScene().name);
