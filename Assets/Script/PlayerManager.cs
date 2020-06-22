@@ -8,18 +8,22 @@ public class PlayerManager : MonoBehaviour
     //Rigidbodyの変数rbの宣言
     AnimatorStateInfo animatorStateInfo;
     Rigidbody rb;
+    Rigidbody rbody;
     Animator animator;
     float x;
     float z;
     public float moveSpeed = 2;
+    [SerializeField] private Vector3 localGravity;
 
     void Start()
     {
         //Rigidbodyの値を取得
         rb = GetComponent<Rigidbody>();
+        rbody = this.GetComponent<Rigidbody>();
         //旋回などをしないようにする
         rb.constraints = RigidbodyConstraints.FreezeRotation;
         animator = GetComponent<Animator>();
+        rbody.useGravity = false;
     }
 
     // Update is called once per frame
@@ -59,6 +63,7 @@ public class PlayerManager : MonoBehaviour
         //速度設定
         rb.velocity = new Vector3(x, 0, z) * moveSpeed;
         animator.SetFloat("speed", rb.velocity.magnitude);
+        SetLocalGravity();
     }
 
     public void Hit()
@@ -66,18 +71,21 @@ public class PlayerManager : MonoBehaviour
         
     }
 
+    private void SetLocalGravity()
+    {
+        rbody.AddForce(localGravity, ForceMode.Acceleration);
+    }
+
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "cube(3)")
+        Damager damager = other.GetComponent<Damager>();
+        if (damager != null)
         {
-            if (animatorStateInfo.IsName("attack3"))
-            {
-                rb.AddForce(transform.root.forward * 25, ForceMode.Impulse);
-            }
-
-        }
-
+            Debug.Log("ダメージを受ける");
         }
     }
+
+
+}
 
 
