@@ -5,13 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Out : MonoBehaviour
 {
-    void Start()
-    {
-        gameObject.tag = "Player";
-    }
     private void OnTriggerEnter(Collider col)
     {
-        if (gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player")
         {
             SceneManager.LoadScene(
                 SceneManager.GetActiveScene().name);
