@@ -7,14 +7,15 @@ public class MoveBox : MonoBehaviour
     Rigidbody rb;
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = this.GetComponent<Rigidbody>();
     }
     public void OnTriggerEnter(Collider other)
     {
         Damager damager = other.GetComponent<Damager>();
         if(damager != null)
         {
-            Debug.Log("ダメージを受ける");
+            Vector3 force = new Vector3(0.0f, 8.0f, 1.0f);
+            rb.AddForce(force, ForceMode.Impulse);
         }
     }
 }

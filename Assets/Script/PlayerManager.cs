@@ -14,7 +14,7 @@ public class PlayerManager : MonoBehaviour
     float z;
     public float moveSpeed = 2;
     [SerializeField] private Vector3 localGravity;
-
+    public Collider weaponCollider;
     void Start()
     {
         //Rigidbodyの値を取得
@@ -76,16 +76,15 @@ public class PlayerManager : MonoBehaviour
         rbody.AddForce(localGravity, ForceMode.Acceleration);
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void HideColliderWeapon()
     {
-        Damager damager = other.GetComponent<Damager>();
-        if (damager != null)
-        {
-            Debug.Log("ダメージを受ける");
-        }
+        weaponCollider.enabled = false;
     }
 
-
+    public void ShowColliderWeapon()
+    {
+        weaponCollider.enabled = true;
+    }
 }
 
 
