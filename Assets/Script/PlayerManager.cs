@@ -5,8 +5,6 @@ using UnityEngine.EventSystems;
 
 public class PlayerManager : MonoBehaviour
 {
-    //Rigidbodyの変数rbの宣言
-    AnimatorStateInfo animatorStateInfo;
     Rigidbody rb;
     Rigidbody rbody;
     Animator animator;
@@ -15,9 +13,9 @@ public class PlayerManager : MonoBehaviour
     public float moveSpeed = 2;
     [SerializeField] private Vector3 localGravity;
     public Collider weaponCollider;
+    
     void Start()
     {
-        //Rigidbodyの値を取得
         rb = GetComponent<Rigidbody>();
         rbody = this.GetComponent<Rigidbody>();
         //旋回などをしないようにする
@@ -28,7 +26,6 @@ public class PlayerManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         //キーボード入力で移動
@@ -36,22 +33,22 @@ public class PlayerManager : MonoBehaviour
         z = Input.GetAxisRaw("Vertical");
 
         //攻撃入力:Mボタンを押したら 
-        if(Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             animator.SetTrigger("attack");
 
-        //攻撃入力：Nボタンを押したら
-        } else if(Input.GetKeyDown(KeyCode.N))
+            //攻撃入力：Nボタンを押したら
+        } else if (Input.GetKeyDown(KeyCode.N))
         {
             animator.SetTrigger("attack2");
 
-        //攻撃入力：Jボタンを押したら
-        } else if(Input.GetKeyDown(KeyCode.J))
+            //攻撃入力：Jボタンを押したら
+        } else if (Input.GetKeyDown(KeyCode.J))
         {
             animator.SetTrigger("attack3");
 
-        //攻撃入力：Spaceボタンを押したら
-        } else if(Input.GetKeyDown(KeyCode.Space))
+            //攻撃入力：Spaceボタンを押したら
+        } else if (Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetTrigger("jump");
         }
@@ -72,6 +69,7 @@ public class PlayerManager : MonoBehaviour
     {
         
     }
+
 
     private void SetLocalGravity()
     {

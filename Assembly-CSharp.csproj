@@ -126,6 +126,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Script\BlowOff.cs" />
     <Compile Include="Assets\Script\Damager.cs" />
+    <Compile Include="Assets\Script\Destroy.cs" />
     <Compile Include="Assets\Script\GameFinish.cs" />
     <Compile Include="Assets\Script\Goal.cs" />
     <Compile Include="Assets\Script\MoveBoxBase.cs" />
