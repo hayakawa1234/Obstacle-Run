@@ -2,15 +2,17 @@
 using UnityEngine.Assertions;
 
 public class MoveBoxBase : MonoBehaviour
-{   //  最初のHP
-    int maxHp = 100;
-    private int hp = 100;
+{   //最初のHP
+    int maxHp = 10;
+    //変動するHP
+    protected int hp = 10;
     void Start()
     {
         hp = maxHp;
     }
 
-    void Damage(int damage)
+    //ダメージを受けた時の処理
+    public void Damage(int damage)
     {
         hp -= damage;
         if(hp <= 0)
@@ -18,14 +20,5 @@ public class MoveBoxBase : MonoBehaviour
             hp = 0;
         }
     }
-    public void OnTriggerEnter(Collider other)
-    {
-        Damager damager = other.GetComponent<Damager>();
-        if (damager != null)
-        {
-            Damage(damager.damage);
-        }
-    }
-
 }
 
