@@ -3,7 +3,7 @@ using UnityEngine.Assertions;
 
 public class MoveBoxBase : MonoBehaviour
 {   //  最初のHP
-    [SerializeField] int maxHp = 100;
+    int maxHp = 100;
     private int hp = 100;
     void Start()
     {
@@ -24,7 +24,6 @@ public class MoveBoxBase : MonoBehaviour
         if (damager != null)
         {
             Damage(damager.damage);
-            Debug.Log(hp);
         }
     }
 

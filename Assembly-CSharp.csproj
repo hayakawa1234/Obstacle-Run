@@ -127,7 +127,6 @@
     <Compile Include="Assets\Script\Damager.cs" />
     <Compile Include="Assets\Script\GameFinish.cs" />
     <Compile Include="Assets\Script\Goal.cs" />
-    <Compile Include="Assets\Script\MoveBox.cs" />
     <Compile Include="Assets\Script\MoveBoxBase.cs" />
     <Compile Include="Assets\Script\Out.cs" />
     <Compile Include="Assets\Script\PlayerManager.cs" />

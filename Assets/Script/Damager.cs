@@ -5,4 +5,9 @@ using UnityEngine;
 public class Damager : MonoBehaviour
 {
     public int damage;
+
+    private void Start()
+    {
+        damage = 10;
+    }
 }
