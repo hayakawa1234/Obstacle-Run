@@ -24,6 +24,8 @@ public class PlayerManager : MonoBehaviour
         rb.constraints = RigidbodyConstraints.FreezeRotation;
         animator = GetComponent<Animator>();
         rbody.useGravity = false;
+        HideColliderWeapon();
+
     }
 
     // Update is called once per frame
