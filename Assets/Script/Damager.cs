@@ -6,6 +6,7 @@ public class Damager : MonoBehaviour
 {
     public int damage;
 
+    //ダメージの初期設定は10
     private void Start()
     {
         damage = 10;

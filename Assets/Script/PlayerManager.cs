@@ -25,11 +25,10 @@ public class PlayerManager : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rbody = this.GetComponent<Rigidbody>();
-        //旋回などをしないようにする
-        rb.constraints = RigidbodyConstraints.FreezeRotation;
+        rb.constraints = RigidbodyConstraints.FreezeRotation;　//旋回などをしないようにする
         animator = GetComponent<Animator>();
         rbody.useGravity = false;
-        HideColliderWeapon();
+        HideColliderWeapon();　//初期設定では剣が当たっても何も起こらないようにする
         velocity = Vector3.zero;
         isGround = false;
 
@@ -65,6 +64,7 @@ public class PlayerManager : MonoBehaviour
             animator.SetTrigger("jump");
         }
         
+        //地面に接地していない場合
         if (!isGroundCollider)
         {
             if (Physics.Linecast(charaRay.position, (charaRay.position - transform.up * charaRayRange)))
@@ -86,10 +86,6 @@ public class PlayerManager : MonoBehaviour
             if (isGroundCollider)
             {
                 velocity = Vector3.zero;
-
-                //　着地していたらアニメーションパラメータと２段階ジャンプフラグをfalse
-                animator.SetBool("Jump", false);
-                rb.useGravity = true;
 
                 //　レイを飛ばして接地確認の場合は重力だけは働かせておく、前後左右は初期化
             }
@@ -124,17 +120,19 @@ public class PlayerManager : MonoBehaviour
         
     }
 
-
+    //キャラクターにのみ重力設定をする処理
     private void SetLocalGravity()
     {
         rbody.AddForce(localGravity, ForceMode.Acceleration);
     }
 
+    //特定のアニメーションが実行されていない場合
     public void HideColliderWeapon()
     {
         weaponCollider.enabled = false;
     }
 
+    //特定のアニメーションが実行されている場合
     public void ShowColliderWeapon()
     {
         weaponCollider.enabled = true;
