@@ -16,7 +16,7 @@ public class BigBox : MoveBoxBase
             //hpが0になった時にボックスが大きくなる
             if (hp <= 0)
             {
-                this.transform.localScale = new Vector3(4, 4, 4);
+                this.transform.localScale = new Vector3(10, 10, 10);
             }
 
             //大きくなってからボックスを飛ばせるようにする
