@@ -285,6 +285,9 @@
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
+    <Reference Include="JMOAssets_CartoonFXFreeWelcome">
+      <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
