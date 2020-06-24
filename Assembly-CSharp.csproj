@@ -124,6 +124,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Script\BigBox.cs" />
     <Compile Include="Assets\Script\BlowOff.cs" />
     <Compile Include="Assets\Script\Damager.cs" />
     <Compile Include="Assets\Script\Destroy.cs" />
@@ -132,6 +133,7 @@
     <Compile Include="Assets\Script\MoveBoxBase.cs" />
     <Compile Include="Assets\Script\Out.cs" />
     <Compile Include="Assets\Script\PlayerManager.cs" />
+    <Compile Include="Assets\Script\SmallBox.cs" />
     <Compile Include="Assets\Script\SphereObject.cs" />
     <Compile Include="Assets\Script\Timer.cs" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
