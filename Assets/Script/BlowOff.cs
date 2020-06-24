@@ -16,7 +16,7 @@ public class BlowOff : MoveBoxBase
             if (hp <= 0)
             {
                 Rigidbody rb = GetComponent<Rigidbody>();
-                Vector3 force = new Vector3(20.0f, 20.0f, 0.0f);
+                Vector3 force = new Vector3(5.0f, 5.0f, 5.0f);
                 rb.AddForce(force, ForceMode.Impulse);
             }
         }
