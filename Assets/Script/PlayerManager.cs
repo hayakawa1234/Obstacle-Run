@@ -13,7 +13,14 @@ public class PlayerManager : MonoBehaviour
     public float moveSpeed = 2;
     [SerializeField] private Vector3 localGravity;
     public Collider weaponCollider;
-    
+    [SerializeField]
+    private Transform charaRay;
+    [SerializeField]
+    private float charaRayRange = 0.2f;
+    private bool isGround;
+    private bool isGroundCollider = false;
+    private Vector3 velocity;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -23,6 +30,8 @@ public class PlayerManager : MonoBehaviour
         animator = GetComponent<Animator>();
         rbody.useGravity = false;
         HideColliderWeapon();
+        velocity = Vector3.zero;
+        isGround = false;
 
     }
 
@@ -38,20 +47,65 @@ public class PlayerManager : MonoBehaviour
             animator.SetTrigger("attack");
 
             //攻撃入力：Nボタンを押したら
-        } else if (Input.GetKeyDown(KeyCode.N))
+        }
+        else if (Input.GetKeyDown(KeyCode.N))
         {
             animator.SetTrigger("attack2");
 
             //攻撃入力：Jボタンを押したら
-        } else if (Input.GetKeyDown(KeyCode.J))
+        }
+        else if (Input.GetKeyDown(KeyCode.J))
         {
             animator.SetTrigger("attack3");
 
             //攻撃入力：Spaceボタンを押したら
-        } else if (Input.GetKeyDown(KeyCode.Space))
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetTrigger("jump");
         }
+        
+        if (!isGroundCollider)
+        {
+            if (Physics.Linecast(charaRay.position, (charaRay.position - transform.up * charaRayRange)))
+            {
+                isGround = true;
+                rb.useGravity = true;
+            }
+            else
+            {
+                isGround = false;
+                rb.useGravity = false;
+            }
+            Debug.DrawLine(charaRay.position, (charaRay.position - transform.up * charaRayRange), Color.red);
+        }
+        //　キャラクターコライダが接地、またはレイが地面に到達している場合
+        if (isGroundCollider || isGround)
+        {
+            //　地面に接地してる時は初期化
+            if (isGroundCollider)
+            {
+                velocity = Vector3.zero;
+
+                //　着地していたらアニメーションパラメータと２段階ジャンプフラグをfalse
+                animator.SetBool("Jump", false);
+                rb.useGravity = true;
+
+                //　レイを飛ばして接地確認の場合は重力だけは働かせておく、前後左右は初期化
+            }
+            else
+            {
+                velocity = new Vector3(0f, velocity.y, 0f);
+            }
+
+            
+
+            if (!isGroundCollider && !isGround)
+            {
+                velocity.y += Physics.gravity.y * Time.deltaTime;
+            }
+        }
+
     }
 
     private void FixedUpdate()
