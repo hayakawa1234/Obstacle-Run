@@ -20,5 +20,24 @@ public class MoveBoxBase : MonoBehaviour
             hp = 0;
         }
     }
+
+    public virtual void ChangeBox()
+    {
+        this.transform.localScale = new Vector3(10, 10, 10);
+    }
+
+    public virtual void OnTriggerEnter(Collider other)
+    {
+        Damager damager = other.GetComponent<Damager>();
+        if (damager != null)
+        {
+            Damage(damager.damage);
+        }
+
+        if (hp <= 0)
+        {
+            ChangeBox();
+        }
+    }
 }
 

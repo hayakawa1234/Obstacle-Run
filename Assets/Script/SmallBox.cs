@@ -5,24 +5,12 @@ using UnityEngine;
 public class SmallBox : MoveBoxBase
 {
     //特定のアニメーションが当たった場合の処理
-    public void OnTriggerEnter(Collider other)
+    public override void OnTriggerEnter(Collider other)
     {
-        //ダメージを受けた場合に処理が行われる
-        Damager damager = other.GetComponent<Damager>();
-        if (damager != null)
-        {
-            Damage(damager.damage);
-
-            //hpが0になった時にボックスが小さくなる処理
-            if (hp <= 0)
-            {
-                this.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-            }
-        }
-
-        //小さくなってからボックスを飛ばせるようにする
+        base.OnTriggerEnter(other);
+        this.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         Rigidbody rb = GetComponent<Rigidbody>();
-        Vector3 force = new Vector3(10.0f, 10.0f, 10.0f);
+        Vector3 force = new Vector3(5.0f, 5.0f, 5.0f);
         rb.AddForce(force, ForceMode.Impulse);
     }
 }
