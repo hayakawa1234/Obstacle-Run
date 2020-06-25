@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 // 1.UIシステムを利用するときに利用（今回でいう「Text」）
 using UnityEngine.UI;
 
@@ -28,6 +29,11 @@ public class Timer : MonoBehaviour
         {
             // 5.経過時間を追加
             time = time + Time.deltaTime;
+        }
+
+        if (Goal.goal == true)
+        {
+            SceneManager.LoadScene("End");
         }
 
         // 6.小数点以下を切り捨てる
