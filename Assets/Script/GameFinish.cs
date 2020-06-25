@@ -37,11 +37,5 @@ public class GameFinish : MonoBehaviour
                 PlayerPrefs.SetInt("BestScore", score);
             }
         }
-    }
-    public void OnRetry()
-    {
-        SceneManager.LoadScene(
-            SceneManager.GetActiveScene().name);
-    }
-    
+    }    
 }
