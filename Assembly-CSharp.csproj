@@ -70,6 +70,14 @@
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+    <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+    <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\FREE Footsteps System\scripts\CameraFollow.cs" />
     <Compile Include="Assets\FREE Footsteps System\scripts\CameraView.cs" />
     <Compile Include="Assets\FREE Footsteps System\scripts\CharacterFootsteps.cs" />
@@ -129,6 +137,7 @@
     <None Include="Assets\Knight\shaders\doublesidedshader.shader" />
     <None Include="Assets\Marcos Schultz\MSAdvancedCameraController\UpdateNotes.txt" />
     <None Include="Assets\Demigiant\DOTween\readme.txt" />
+    <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\README.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Users/mu-sh/2019.4.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -313,9 +322,6 @@
     <Reference Include="UnityEditor">
       <HintPath>C:/Users/mu-sh/2019.4.1f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween">
-      <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -324,6 +330,9 @@
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Users/mu-sh/2019.4.1f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -741,6 +750,12 @@
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.postprocessing.Editor">
+      <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/ScriptAssemblies/com.unity.postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.postprocessing.Runtime">
+      <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/ScriptAssemblies/com.unity.postprocessing.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
