@@ -21,6 +21,7 @@ public class GameFinish : MonoBehaviour
         {
             bestScore = 999;
         }
+
     }
 
     // Update is called once per frame

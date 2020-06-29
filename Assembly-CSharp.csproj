@@ -122,6 +122,7 @@
     <Compile Include="Assets\Script\BlowOff.cs" />
     <Compile Include="Assets\Script\Damager.cs" />
     <Compile Include="Assets\Script\Destroy.cs" />
+    <Compile Include="Assets\Script\End.cs" />
     <Compile Include="Assets\Script\GameFinish.cs" />
     <Compile Include="Assets\Script\GameOver.cs" />
     <Compile Include="Assets\Script\Goal.cs" />

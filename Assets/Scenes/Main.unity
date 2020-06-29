@@ -6501,7 +6501,7 @@ GameObject:
   - component: {fileID: 1140184174}
   - component: {fileID: 1140184173}
   m_Layer: 0
-  m_Name: DestroyCube (1)
+  m_Name: ChangeSmallCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6640,7 +6640,7 @@ GameObject:
   - component: {fileID: 1142628853}
   - component: {fileID: 1142628854}
   m_Layer: 0
-  m_Name: Cube(3)
+  m_Name: BlowOffCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6979,7 +6979,7 @@ GameObject:
   - component: {fileID: 1278784003}
   - component: {fileID: 1278784002}
   m_Layer: 0
-  m_Name: DestroyCube (2)
+  m_Name: ChangeBigBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8080,7 +8080,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 191138, guid: 4e2dd32c733005a44b50004d673dc653, type: 3}
       propertyPath: m_Name
-      value: tree03
+      value: tree02
       objectReference: {fileID: 0}
     - target: {fileID: 451222, guid: 4e2dd32c733005a44b50004d673dc653, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8276,7 +8276,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 162742, guid: d15b44addf30da74f946086ec0aa993c, type: 3}
       propertyPath: m_Name
-      value: bush04
+      value: bush01
       objectReference: {fileID: 0}
     - target: {fileID: 485560, guid: d15b44addf30da74f946086ec0aa993c, type: 3}
       propertyPath: m_LocalPosition.x
