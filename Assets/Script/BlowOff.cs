@@ -8,7 +8,7 @@ public class BlowOff : MoveBoxBase
     public override void OnTriggerEnter(Collider other)
     {
         Rigidbody rb = GetComponent<Rigidbody>();
-        Vector3 force = new Vector3(5.0f, 5.0f, 5.0f);
+        Vector3 force = new Vector3(0.0f, 5.0f, 5.0f);
         rb.AddForce(force, ForceMode.Impulse);
     }
 
