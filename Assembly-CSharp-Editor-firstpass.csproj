@@ -270,6 +270,9 @@
     <Reference Include="DOTweenEditor">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
     </Reference>
+    <Reference Include="PackageManagerAssembly">
+      <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/PackageCache/com.unity.ads@3.4.5/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -284,9 +287,6 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="PackageManagerAssembly">
-      <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -678,6 +678,9 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
@@ -689,6 +692,9 @@
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
@@ -713,12 +719,6 @@
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/mu-sh/OneDrive/ドキュメント/GitHub/Obstacle-Run/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
