@@ -9,7 +9,7 @@ public class BigBox : MoveBoxBase
     {
         base.OnTriggerEnter(other);
         Rigidbody rb = GetComponent<Rigidbody>();
-        Vector3 force = new Vector3(10.0f, 10.0f, 10.0f);
+        Vector3 force = new Vector3(0.0f, 10.0f, 0.0f);
         rb.AddForce(force, ForceMode.Impulse);
     }
 }

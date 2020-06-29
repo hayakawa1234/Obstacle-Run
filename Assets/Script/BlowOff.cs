@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BlowOff : MoveBoxBase
 {
-    public GameObject particleObject;
     //特定のアニメーションが当たった場合の処理
     public override void OnTriggerEnter(Collider other)
     {
